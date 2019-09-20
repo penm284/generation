@@ -1,0 +1,25 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"> Welcome to the Generation Predictor Website</h1>
+    <head>
+        <meta charset="UTF-8">
+        <title>Display data</title>
+        <script>
+            function displayDate(){
+              document.getElementById("showDate").innerHTML = Date();
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="displayDate()">Show Date</button>
+        <p id="showDate"></p>
+
+    <p class="lead">Write the year you were born using 4 numbers: </p>
+
+
+  </div>
+  <form action = "/results" method = "POST"> 
+    <label for="generation">Birth year:</label>
+    <input type='text' name='generation'>
+    <input type='submit'>
+  </form>
